@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HumanityFlow | Gestión de Crisis Humanitaria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="badge">Plataforma Logística Global</div>
+            <h1>Humanity<span>Flow</span></h1>
+            <p class="tagline">Optimización de Suministros en Situaciones de Emergencia</p>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        
+        <section class="card">
+            <h2>Contexto del Proyecto Social</h2>
+            <p>Durante las primeras horas de un desastre natural, la llegada de damnificados a los centros de refugio no es lineal; se expande rápidamente siguiendo patrones de aceleración natural. Este simulador utiliza la <strong>serie de Fibonacci</strong> para planificar la entrega escalonada de raciones de alimentos y kits médicos. Garantizar que la ayuda crezca al mismo ritmo que la emergencia es vital para salvar vidas y evitar el desabastecimiento.</p>
+        </section>
+
+        <section class="card">
+            <h2>Algoritmos de Distribución Crítica</h2>
+            <p>Para asegurar que los recursos limitados se gestionen de forma óptima, la plataforma ejecuta dos procesos automatizados:</p>
+            <div class="grid-features">
+                <div class="feature-item">
+                    <h3>Crecimiento de Demanda</h3>
+                    <p>Calcula el total de insumos acumulados necesarios para cada fase de la crisis mediante un ciclo iterativo, minimizando el uso de memoria en servidores locales de emergencia.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Validación de Integridad</h3>
+                    <p>Aplica un filtro de verificación de números primos al lote total de cajas. Si el código final es primo, el sistema valida el cargamento como "lote seguro", previniendo alteraciones en la cadena de distribución.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card main-action">
+            <h2>Panel de Control de Suministros</h2>
+            <form id="formSimulador" onsubmit="return false;">
+                <label for="meses">Fases de entrega a simular (Días/Etapas):</label>
+                <div class="interactive-input">
+                    <input type="number" id="meses" min="1" max="40" placeholder="Ej. 7" required>
+                    <button type="button" id="btnCalcular">PROYECTAR LOGÍSTICA</button>
+                </div>
+            </form>
+
+            <div id="resultado" class="result-area">
+                <p class="waiting-text">Sistema listo. Ingrese las fases para calcular la distribución de ayuda en la zona afectada.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Impacto y Conclusión</h2>
+            <p>El uso de la tecnología y las matemáticas aplicadas a la logística humanitaria reduce los tiempos de respuesta en zonas de crisis. Desarrollar interfaces accesibles y responsivas permite que los coordinadores en el terreno tomen decisiones informadas basadas en proyecciones algorítmicas exactas.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desarrollado para el Desafío de Innovación Social Web</p>
+        <div class="footer-links">
+            <a href="#" target="_blank">Repositorio de Código</a> | 
+            <a href="#" target="_blank">Despliegue en la Web</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
